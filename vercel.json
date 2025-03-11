@@ -3,5 +3,13 @@
     "api/*.js": {
       "runtime": "nodejs18.x"
     }
-  }
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "development"
+    }
+  },
+  "routes": [
+    { "src": "/api/.*", "dest": "/api/server.js" }
+  ]
 }
